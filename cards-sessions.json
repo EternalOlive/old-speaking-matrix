@@ -1,0 +1,27 @@
+{
+  "v": 1,
+  "sessions": [
+    {
+      "id": "sess-default",
+      "name": "Speaking Matrix 데일리",
+      "how": "auto",
+      "scope": {},
+      "mode": "auto",
+      "order": "shuffle",
+      "day": ""
+    }
+  ],
+  "hoedok": {},
+  "read": {},
+  "fc": {},
+  "cap": 130,
+  "capAt": 0,
+  "ret": 0.9,
+  "retAt": 0,
+  "rest": {
+    "dow": 0,
+    "days": [],
+    "skip": []
+  },
+  "restAt": 0
+}

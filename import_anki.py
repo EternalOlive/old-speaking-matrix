@@ -188,13 +188,22 @@ def convert_anki_package(apkg_path):
         "v": 1,
         "sessions": [
             {
-                "id": "sess-default",
+                "id": "s_default_speaking",
                 "name": "Speaking Matrix 데일리",
-                "how": "auto",
-                "scope": {},
+                "how": {
+                    "status": ["due", "new"],
+                    "order": "shuffle",
+                    "weights": {},
+                    "limit": None,
+                    "bury": True,
+                    "newAfter": True
+                },
+                "scope": {"units": [], "mids": [], "subj": [], "tags": [], "typ": []},
                 "mode": "auto",
-                "order": "shuffle",
-                "day": ""
+                "day": "",
+                "q": [],
+                "done": 0,
+                "scores": []
             }
         ],
         "hoedok": {},

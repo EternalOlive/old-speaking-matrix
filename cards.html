@@ -7292,6 +7292,7 @@ function normalizeSessions(){
     x.scope=Object.assign({units:[],mids:[],subj:[],tags:[],typ:[]},x.scope||{}); x.q=x.q||[];
     x.scope.ex=Object.assign({units:[],mids:[]}, x.scope.ex||{});
     if(!x.mode) x.mode=(x.scope.units&&x.scope.units.length)?'manual':'auto';
+    if(typeof x.how !== 'object' || !x.how) x.how = JSON.parse(JSON.stringify(HOW_TPL[0].how));
     x.how.status=stArr(x.how.status);
   }
   fixDoneOnce();
